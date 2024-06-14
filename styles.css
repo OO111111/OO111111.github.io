@@ -53,3 +53,30 @@ footer {
 .email-foot {
     background-color: white;
 }
+
+.tablinks {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    border-color: #333;
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+	justify-content: center;
+    height: 35px;
+}
+
+.tablinks.active {
+    top: 2px;
+    left: 1px;
+    box-shadow: none;
+    border-color: #000000;
+    background: #000000;
+}
+
+.hidden {
+    display: none;  
+}
