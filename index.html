@@ -8,23 +8,69 @@
     <header>
         <h1>John Doe - Audio Engineer</h1>
     </header>
-    <section id="about">
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tablinks active" id="home" onclick="openTab('home')">Home</button>
+        <button class="tablinks" id="about" onclick="openTab('about')">About</button>
+        <button class="tablinks" id="audio" onclick="openTab('audio')">Audio</button>
+        <button class="tablinks" id="video" onclick="openTab('video')">Video</button>
+        <button class="tablinks" id="contact" onclick="openTab('contact')">Contact Me</button>
+    </div>
+
+    <!-- Home -->
+    <section class="sections" id="home-section">
+        <h2>Welcome</h2>
+        <p>The black sheep runs along the atlantic ocean while setting records on fire as we jump along the roofs.</p>
+    </section>
+
+    <!-- About -->
+    <section class="sections hidden" id="about-section">
         <h2>About Me</h2>
         <p>I am a passionate audio engineer with years of experience in mixing, mastering, and sound design. Explore my portfolio to see my projects and collaborations.</p>
     </section>
-    <section id="projects">
-        <h2>My Projects</h2>
+
+    <!-- Audio -->
+    <section class="sections hidden" id="audio-section">
+        <h2>Audio</h2>
         <div class="project">
-            <h3>Project Title 1</h3>
+            <h3>Song 1</h3>
             <p>Description of Project 1.</p>
             <a href="https://soundcloud.com/yourtracklink" target="_blank">Listen on SoundCloud</a>
             <a href="https://vimeo.com/yourvideolink" target="_blank">Watch on Vimeo</a>
         </div>
-        <!-- Repeat the div block for each project -->
+        <div class="project">
+            <h3>Song 2</h3>
+            <p>Description of Project 2.</p>
+            <a href="https://soundcloud.com/yourtracklink" target="_blank">Listen on SoundCloud</a>
+            <a href="https://vimeo.com/yourvideolink" target="_blank">Watch on Vimeo</a>
+        </div>
     </section>
-    <footer>
-        <p class="email-foot">Contact me at: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
-    </footer>
-    <script src="script.js"></script>
+
+    <!-- Video -->
+    <section class="sections hidden" id="video-section">
+        <h2>Video</h2>
+        <div class="project">
+            <h3>Video 1</h3>
+            <p>Description of Project 1.</p>
+            <a href="https://soundcloud.com/yourtracklink" target="_blank">Listen on SoundCloud</a>
+            <a href="https://vimeo.com/yourvideolink" target="_blank">Watch on Vimeo</a>
+        </div>
+        <div class="project">
+            <h3>Video 2</h3>
+            <p>Description of Project 2.</p>
+            <a href="https://soundcloud.com/yourtracklink" target="_blank">Listen on SoundCloud</a>
+            <a href="https://vimeo.com/yourvideolink" target="_blank">Watch on Vimeo</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="sections hidden" id="contact-section">
+        <h2>Contact Info</h2>
+        <p>Phone Number: 911</p>
+        <p>Address: Uranus' 4th Moon</p>
+        <p>Email: beardedguy@with.face</p>
+    </section>
+    <script src="scripts.js"></script>
 </body>
 </html>

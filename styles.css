@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #000000;
+    color: #fff;
 }
 
 header {
@@ -20,7 +21,6 @@ h1, h2 {
 section {
     margin: 20px;
     padding: 20px;
-    background: #fff;
 }
 
 .project {
@@ -52,4 +52,31 @@ footer {
 
 .email-foot {
     background-color: white;
+}
+
+.tablinks {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    border-color: #333;
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+	justify-content: center;
+    height: 35px;
+}
+
+.tablinks.active {
+    top: 2px;
+    left: 1px;
+    box-shadow: none;
+    border-color: #000000;
+    background: #000000;
+}
+
+.hidden {
+    display: none;  
 }
