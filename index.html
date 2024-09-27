@@ -1,76 +1,373 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Audio Engineer Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Audio Engineer Portfolio</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
 <body>
-    <header>
-        <h1>John Doe - Audio Engineer</h1>
-    </header>
+	<!-- Header -->
+	<header class="bg-dark text-white py-3">
+		<div class="container-fluid">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-md-4">
+					<h1 class="h3">John Doe - Audio Engineer</h1>
+				</div>
+				<div class="col-md-4 text-md-right">
+					<p class="mb-0">Contact: john.doe@example.com | (123) 456-7890</p>
+				</div>
+			</div>
+		</div>
+	</header>
 
-    <!-- Tabs -->
-    <div class="tabs">
-        <button class="tablinks active" id="home" onclick="openTab('home')">Home</button>
-        <button class="tablinks" id="about" onclick="openTab('about')">About</button>
-        <button class="tablinks" id="audio" onclick="openTab('audio')">Audio</button>
-        <button class="tablinks" id="video" onclick="openTab('video')">Video</button>
-        <button class="tablinks" id="contact" onclick="openTab('contact')">Contact Me</button>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Audio</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Video</button>
+    </li>
+    </ul>
+    <div class="tab-content container" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <h2 class="h4 text-center mb-4" id="about" role="tabpanel" aria-labelledby="about-tab">About Me</h2>
+			<div>
+
+                <p>Hello there!</p>
+
+                <p>I'm Paul Sivertsen. I'm an audio engineer with over 29 years of experience in live theater/concert production. I was often tasked with compiling SFX palettes for the shows, sometimes requiring extensive searches through sound effects libraries. I also recorded and designed many of my own sound effects. I've worked in both Mac and Windows most of my life, giving me strong confidence in both operating systems.</p>
+
+                <p>Before I went to Full Sail University, I took 3 1/2 years of classical piano training, granting me the ability to read, play from, and even compose sheet music. My first job was working as a sales associate for a now-defunct NJ chain called Compact Disc World. There, I gained broad exposure to many different sorts of music, as well as a strong proficiency in conducting database searches, and a typing speed of over 90 words per minute. I was eventually promoted to manager when the chain was sold to a corporate buyer.</p>
+
+                <p>After earning my Associate's and Bachelor's degrees in Recording Arts at Full Sail, as well as Operator certifications for Pro Tools, two Perfect Attendance Awards, and two Course Director Awards in Advanced Audio Workstations and Professional Writing, I moved out to Los Angeles to further my career in professional audio. I completed an internship at Dark Child Studios in Hollywood where I was allowed to engineer recording sessions with signed artists and lead a team of 5 in the meticulous and efficient completion of various studio tasks.</p>
+
+                <p>In August 2012, up to the present day, I relocated back home to Wayne, NJ to take over head engineering and ownership of Rave Review Productions. Between Nov. 2013 and May 2014, I also worked at Guitar Center as a Pro Audio Sales Associate where I expertly advised numerous customers on equipment purchases. Between Nov. 2013-Nov. 2014, I played drums and did live sound for my mother's church. I'm currently looking for an audio engineering position with a more stable salary as both the pandemic and the FCC essentially ruined my freelance business.</p>
+
+            </div>
+
+            <h3 class="h4 text-center mb-4">Skills</h3>
+
+            <ul>
+                <li>
+                    Software Proficiencies
+                    <ul>
+                        <li>Pro Tools 7.4-11</li>
+                        <li>Logic Pro 8</li>
+                        <li>Microsoft Word</li>
+                        <li>Microsoft Excel</li>
+                        <li>Microsoft PowerPoint</li>
+                        <li>Adobe Photoshop CS4</li>
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    Hardware Proficiencies
+                    <ul>
+                        <li>Digidesign control surfaces such as D-Control/Command</li>
+                        <li>VENUE & C24, SSL 9000J</li>
+                        <li>SSL 9000J</li>
+                        <li>SSL AWS 900+</li>
+                        <li>SSL Matrix</li>
+                        <li>Amek 9098i</li>
+                        <li>Audient ASP8024</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    Specialties
+                    <ul>
+                        <li>Operation of Pro Tools</li>
+                        <li>General audio/video editing</li>
+                        <li>DJing</li>
+                        <li>Sound design</li>
+                        <li>Podcast production</li>
+                        <li>Mixing</li>
+                        <li>Recording</li>
+                        <li>Foley</li>
+                        <li>Dialog/VO/ADR/SOT</li>
+                        <li>Music/lyric composition</li>
+                        <li>Implementation of interactive audio in FMOD & UDK</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div>
+                <h3 class="text-center mb-4">Professional Experience</h3>
+
+                <h4 class="text-center">Rave Review Productions  (Jan. 1995 - present)</h4>
+                <h5 class="text-center mb-3">Owner & FOH audio/video engineer (as an independent contractor)</h5>
+
+                <ul>
+                    <li>Meticulously set up and operated all necessary components of front-of-house PA systems
+                    <li>Delegated tasks to subordinates whenever necessary
+                    <li>Troubleshot audio/video equipment under strict time constraints
+                    <li>Edited video on Final Cut Pro 6
+                    <li>Compiled sound palettes for theatrical productions from SFX libraries
+                    <li>Triggered sound effects and/or music during theatrical productions
+                    <li>Used onboard and outboard dynamic and time-based processing to enhance theatrical audio
+                    <li>Controlled up to 22 Sennheiser lavalier microphones simultaneously during shows
+                    <li>Acquired knowledge of maintaining good phase consistency and behaviors of sound in myriad environments
+                    <li>Recorded and mixed conversational podcasts, poetry & prose recitations, and dramatic voice acting performances
+                    <li>Provided DJ services for a variety of house parties and special occasions
+                </ul>
+
+                <h3 class="text-center mb-4">Professional Experience</h3>
+
+                <h4 class="text-center">St. Michael's Episcopal Church (Nov. 2013 - Nov. 2014)</h4>
+                <h5 class="text-center mb-3">Drummer, Mix Engineer, Audio Consultant</h5>
+
+                <ul>
+                    <li>Played drums and mixed sound every Sunday morning</li>
+                    <li>Managed microphone plots for choir and holiday theatrical productions</li>
+                    <li>Troubleshot PA system and lavalier issues during services</li>
+                </ul>
+
+                <h4 class="text-center">Guitar Center (Oct. 2013 – May 2014)</h4>
+                <h5 class="text-center mb-3">Professional Audio Salesman</h5>
+
+                <ul>
+                    <li>Explained benefits of various professional audio equipment & software to customers</li>
+                    <li>Proactively improved equipment displays and demo stations</li>
+                    <li>Taught introductory course on DJing to a selection of customers</li>
+                </ul>
+
+                <h4 class="text-center">All or Nothing Games (Feb. 2011 - Aug. 2012)</h4>
+                <h5 class="text-center mb-3">Lead Sound Designer</h5>
+
+                <ul>
+                    <li>Compiled asset list in MS Excel from game script with bit rate, sample rate, and location details</li>
+                    <li>Recorded sounds with Zoom H4N and edited them using Pro Tools 8, Logic 8, and Audacity</li>
+                    <li>Attended meetings with other members of company to establish schedules and foster cross-discipline collaboration</li>
+                </ul>
+
+                <h4 class="text-center">Dark Child Studios (May 2011 - Aug. 2011)</h4>
+                <h5 class="text-center mb-3">Intern</h5>
+
+                <ul>
+                    <li>Diplomatically lead team of 5 interns in meticulous and efficient completion of various tasks</li>
+                    <li>Flawlessly engineered recording sessions with signed artists on Pro Tools HD 8 and 9 systems</li>
+                    <li>Designed hundreds of musical sounds and loops for sample database</li>
+                </ul>
+
+                <h4 class="text-center">Compact Disc World (2000-2002, 2003-2004)</h4>
+                <h5 class="text-center mb-3">Sales Associate & Manager</h5>
+
+                <ul>
+                    <li>Managed teams of 5 in daily store operations</li>
+                    <li>Assisted customers in locating their selections & recommended other artists in the genre(s)</li>
+                    <li>Actively sold "Club CD" membership discount card</li>
+                    <li>Maintained cleanliness of product bins, shelves, and register area</li>
+                    <li>Gained strong proficiency in database searching</li>
+                    <li>Input new product into system database</li>
+                    <li>Special ordered selections for customers</li>
+                    <li>Trained new employees</li>
+                    <li>Developed knowledge of wide variety of musical genres</li>
+                </ul>
+
+                <h4 class="text-center">CVS/Pharmacy (2002-2003)</h4>
+                <h5 class="text-center mb-3">Photo Lab Technician & Assistant Manager</h5>
+
+                <ul>
+                    <li>Managed teams of 5 in daily store operations</li>
+                    <li>Daily preparation and maintenance of Master Lab photo processing machine</li>
+                    <li>Expeditiously completed photo processing tasks for customers</li>
+                    <li>Maintained cleanliness of product shelves and lab area</li>
+                    <li>Stocked new/replacement product</li>
+                    <li>Recorded daily sales in log book</li>
+                    <li>Trained new employees</li>
+                </ul>
+
+                <h3 class="text-center mb-4">Academic Experience</h3>
+
+                <h4 class="text-center">Full Sail University (2008-2010)</h4>
+                <h5 class="text-center mb-3">Advanced Interactive Audio</h5>
+
+                <ul>
+                    <li>Tutored peers working with FMOD Designer</li>
+                    <li>Meticulously constructed SoundCues and Ambient Zones in UDK</li>
+                    <li>Completed each given milestone promptly and flawlessly according to MS Excel spreadsheet</li>
+                    <li>Used FMOD Designer to set audio asset behaviors and establish a well-organized project hierarchy</li>
+                    <li>Implemented audio in prototype UDK level to show understanding of 2D & 3D mixing and immersion</li>
+                </ul>
+
+                <h5 class="text-center mb-3">Interactive Audio</h5>
+
+                <ul>
+                    <li>Created and implemented audio assets for interactive audio patches made in Max/MSP</li>
+                    <li>Operated junXion IV software to make Wiimote trigger sounds through Max/MSP in Mac OS X</li>
+                    <li>Demonstrated understanding of horizontal re-sequencing and vertical re-orchestration adaptive audio concepts through appropriate Max/MSP patches</li>
+                    <li>Collaborated with group of five to design and present a new type of game controller and role-playing music game</li>
+                </ul>
+
+                <h5 class="text-center mb-3">Audio Post-Production</h5>
+
+                <ul>
+                    <li>Compiled, recorded, designed, and mixed all audio elements for two trailers within one month</li>
+                    <li>Worked efficiently with Foley and field recording equipment and techniques</li>
+                    <li>Swiftly learned, used, and assisted peers with D-Control control surface</li>
+                    <li>Expedited session(s) workflow with memory of pertinent Pro Tools hotkeys</li>
+                    <li>Sole member of group of 6 to record dialog and all Foley elements for individual project</li>
+                    <li>Tutored peers with course material including, but not limited to, SMPTE time code math and advanced synchronization processes</li>
+                </ul>
+
+                <h5 class="text-center mb-3">Sound Foundations</h5>
+
+                <ul>
+                    <li>Designed full mock studio with group of three, complete with gear lists, lighting layouts, and AC flow diagram</li>
+                    <li>Developed knowledge of psychoacoustic concepts such as constructive/destructive interference and the Haas Effect</li>
+                    <li>Proved understanding of microphone construction, polar patterns, frequency responses, and effective placement</li>
+                </ul>
+
+                <h5 class="text-center mb-3">Session Recording</h5>
+
+                <ul>
+                    <li>Smoothly accomplished tasks within fast-paced recording studio environment</li>
+                    <li>Designed labeled demo CDs with artwork inserts for recording artists</li>
+                    <li>Set up microphones, Studer tape machine, SSL 9000J and Amek 9098i recording/mixing consoles, and Pro Tools 7.4 for numerous recording sessions</li>
+                    <li>Mixed projects in both analog and digital on SSL Matrix and AWS 900+ hybrid consoles, patching in outboard gear or using plug-ins/automation in DAW</li>
+                    <li>Drafted comprehensive binder of all necessary legal documentation between mock record label and local band, "Dry," for Producer's Showcase</li>
+                </ul>
+
+                <h5 class="text-center mb-3">Advanced Audio Workstations</h5>
+
+                <ul>
+                    <li>Demonstrated competency of setting I/O paths and sub-paths for 5.1 surround sound mixing</li>
+                    <li>Configured and efficiently utilized several Digidesign control surfaces in Pro Tools HD 7.4</li>
+                    <li>Enhanced previous knowledge of valuable session and file management practices and digital audio/video codecs</li>
+                </ul>
+
+
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div  class="mb-5 tab-pane fade show active">
+			
+            </div>
+    
+            <!-- Audio Section -->
+            <section id="audio-section" class="mb-5"></section>
+                <h2 class="h4 text-center mb-4">Audio Samples</h2>
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1590322360&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/paulsaudioportfolio" title="Paul&#x27;s Audio Portfolio" target="_blank" style="color: #cccccc; text-decoration: none;">Paul&#x27;s Audio Portfolio</a> · <a href="https://soundcloud.com/paulsaudioportfolio/sets/podcast-clips" title="Podcast clips" target="_blank" style="color: #cccccc; text-decoration: none;">Podcast clips</a></div>
+    
+    Podcast clip description:
+    These are brief clips from a podcast I've been making since 2012 called Monday Morning Chitchat. In early 2023, I went on hiatus from it, and archived every episode to focus on home improvement and caregiving for my mother. 
+    
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1910625419%3Fsecret_token%3Ds-l38SI7QZYL7&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/paulsaudioportfolio" title="Paul&#x27;s Audio Portfolio" target="_blank" style="color: #cccccc; text-decoration: none;">Paul&#x27;s Audio Portfolio</a> · <a href="https://soundcloud.com/paulsaudioportfolio/udk-prototype-level-sfx-demo/s-l38SI7QZYL7" title="UDK prototype level SFX demo" target="_blank" style="color: #cccccc; text-decoration: none;">UDK prototype level SFX demo</a></div>
+    
+    Game audio demo - UDK SFX
+    
+    This is a collection of the sound design assets I used for my first prototype UDK level. I went for a survival horror motif, so you'll hear a number of effects intended to be unsettling.
+    
+    Make sure to check out the video section for a video walkthrough of the level!
+    
+    1. Bridge Stinger 1
+    2. Bridge Stinger 2
+    3. Bridge Stinger 3
+    4. Manta Room Stinger 1
+    5. Manta Room Stinger 2
+    6. Manta Room Stinger 3
+    7. Tentacle Room Stinger 1
+    8. Tentacle Room Stinger 2
+    9. Tentacle Room Stinger 3
+    10. Torch Room Stinger 1
+    11. Torch Room Stinger 2
+    12. Torch Room Stinger 3
+    13. Object "River"
+    14. Object "Tentacle"
+    15. Object "Torch"
+    16. Object "Waterfall"
+    17. Ambience "Bridge"
+    18. Ambience "Exterior"
+    19. Ambience "Manta Room"
+    20. Ambience "Tentacle Room"
+    21. Ambience "Torch Room"
+    22. Ambience "Underwater"
+    23. Manta Collide 1
+    24. Manta Collide 2
+    25. Manta Crouch
+    26. Manta Engine Loop
+    27. Manta Explode
+    28. Manta Fire
+    29. Manta Fire Impact
+    30. Manta Jump
+    31. Manta Start
+    32. Manta Stop
+    33. Shock Rifle Alt Fire
+    34. Shock Rifle Alt Fire Impact
+    35. Shock Rifle Alt Fire Layer
+    36. Shock Rifle Alt Fire Travel
+    37. Shock Rifle Combo Explosion
+    38. Shock Rifle Fire 1
+    39. Shock Rifle Fire 2
+    40. Shock Rifle Fire Layer
+    
+    
+    Embed code for imyilyis:
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1915032599%3Fsecret_token%3Ds-ni71GjITFfO&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/paulsaudioportfolio" title="Paul&#x27;s Audio Portfolio" target="_blank" style="color: #cccccc; text-decoration: none;">Paul&#x27;s Audio Portfolio</a> · <a href="https://soundcloud.com/paulsaudioportfolio/imyilyis-mix-9/s-ni71GjITFfO" title="Imyilyis (Mix 9)" target="_blank" style="color: #cccccc; text-decoration: none;">Imyilyis (Mix 9)</a></div>
+    
+    This is a recent song I composed the majority of in an app called Band Lab. My friend Al and I started a music project together called Halycon Sisyphus, and this is the first song under that name. Al added the guitar after a number of jam sessions, and my friend Sam was the female vocalist on the track. This is an example of Lo-Fi music, stuff that is meant to sound low-fidelity for artistic purposes. It tends to be used as background music while people study, read, etc.
+    
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <h2 class="h4 text-center mb-4">Video Samples</h2>
+			<h3 class="mb-3 text-center">Game audio sound design demo - UDK prototype level walkthrough</h3>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k_2aPcc8qyY?rel=0" allowfullscreen></iframe>
+            </div>
+
+            <p>This is a video I made demonstrating the sounds I placed into this prototype level using UDK during my Advanced Interactive Audio class at Full Sail. We were all tasked with designing 40 assets, naming them precisely according to the asset list, constructing a project hierarchy in FMOD, and then importing them into our prototype UDK level.  </p>
+
+            <p>I paid meticulous attention to the sound cues, the min/max distances, and the various ambient zones to create as realistic and immersive an environment as possible. Additionally, I opted for a survival horror motif with the stinger sound effects. Finally, the engine loop sound didn't make it through the screen-capturing process very well for some reason, but it's there. </p>
+
+
+            <h3 class="mb-3 text-center">Diablo III - Monk Trailer</h3>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S-YlbPdQy4Q?rel=0" allowfullscreen></iframe>
+            </div>
+
+            <p>This is my edit of the Monk trailer for Diablo III that I did as my individual final project during October 2009 for Audio Post-Production at Full Sail. As stated at the beginning of the video, I do not claim to own the rights to any of the music nor visual content. This is strictly for demo purposes only.</p>
+
+            <p>A little about this video: My instructor cautioned me about choosing a 3-minute trailer, but I didn't see any cause for concern. That is, until I had to spend an extra 12 hours completing the small sound effects for the combat scenes and such. I was also the only member of my group to include dialogue and all Foley elements to my clip. This is actually the third version of this trailer I've released. Regardless of how much daunting work went into it, I think it was well worth all the effort.</p>
+
+            <p>Anyway, I originally mixed it in surround with some creative panning of certain sound effects. The surround mix obviously sounds much better, but I feel confident I did justice to my work in the stereo mix. Word to the wise for any peers who may be reading this: Use a correlation meter on your master fader so you can catch any potential phase issues.</p>
+
+
+            <h3 class="mb-3 text-center">Horizontal Re-Sequencing and Vertical Re-Orchestration</h3>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wbZrDj6-f6Y?rel=0" allowfullscreen></iframe>
+            </div>
+
+            <p>This is a demonstration of two adaptive audio concepts, "Horizontal Re-sequencing," and, "Vertical Re-orchestration." I explain the basics of both before demonstrating them in the Max/MSP patches. Adaptive audio in general is simply audio that changes based on a player's actions, whether it's something that's triggered by the press of a button or something more passive like moving from one area in the game to the next.</p>
+		
+        </div>
     </div>
+      
 
-    <!-- Home -->
-    <section class="sections" id="home-section">
-        <h2>Welcome</h2>
-        <p>The black sheep runs along the atlantic ocean while setting records on fire as we jump along the roofs.</p>
-    </section>
+	<!-- Footer -->
+	<footer class="bg-dark text-white py-3">
+		<div class="container text-center">
+			<p>Contact: john.doe@example.com | (123) 456-7890</p>
+			<p>&copy; 2024 John Doe - Audio Engineer. All rights reserved.</p>
+		</div>
+	</footer>
 
-    <!-- About -->
-    <section class="sections hidden" id="about-section">
-        <h2>About Me</h2>
-        <p>I am a passionate audio engineer with years of experience in mixing, mastering, and sound design. Explore my portfolio to see my projects and collaborations.</p>
-    </section>
-
-    <!-- Audio -->
-    <section class="sections hidden" id="audio-section">
-        <h2>Audio</h2>
-        <div class="project">
-            <h3>Song 1</h3>
-            <p>Description of Project 1.</p>
-            <a href="https://soundcloud.com/yourtracklink" target="_blank">Listen on SoundCloud</a>
-            <a href="https://vimeo.com/yourvideolink" target="_blank">Watch on Vimeo</a>
-        </div>
-        <div class="project">
-            <h3>Song 2</h3>
-            <p>Description of Project 2.</p>
-            <a href="https://soundcloud.com/yourtracklink" target="_blank">Listen on SoundCloud</a>
-            <a href="https://vimeo.com/yourvideolink" target="_blank">Watch on Vimeo</a>
-        </div>
-    </section>
-
-    <!-- Video -->
-    <section class="sections hidden" id="video-section">
-        <h2>Video</h2>
-        <div class="project">
-            <h3>Video 1</h3>
-            <p>Description of Project 1.</p>
-            <a href="https://soundcloud.com/yourtracklink" target="_blank">Listen on SoundCloud</a>
-            <a href="https://vimeo.com/yourvideolink" target="_blank">Watch on Vimeo</a>
-        </div>
-        <div class="project">
-            <h3>Video 2</h3>
-            <p>Description of Project 2.</p>
-            <a href="https://soundcloud.com/yourtracklink" target="_blank">Listen on SoundCloud</a>
-            <a href="https://vimeo.com/yourvideolink" target="_blank">Watch on Vimeo</a>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="sections hidden" id="contact-section">
-        <h2>Contact Info</h2>
-        <p>Phone Number: 911</p>
-        <p>Address: Uranus' 4th Moon</p>
-        <p>Email: beardedguy@with.face</p>
-    </section>
-    <script src="scripts.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
